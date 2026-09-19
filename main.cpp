@@ -2,7 +2,16 @@
 
 int main(int, char**){
     std::cout << "Hello, from ci-cd-sanitizers-lab1!\n";
-    int **a = new int*[10];
-    for(int i = 0; i < 10; ++i) a[i] = new int[5];
-    delete[] a;
+    /*UndefinedBehavior*/
+    int a = 2147483647; // Максимальное значение для 32-битного знакового int
+    a = a + 1; // Неопределенное поведение
+    std::cout << a << std::endl;
+
+    /*Address Error*/
+    int values[3] = {1, 2, 3};
+    std::cout << values[2] << '\n';
+
+    
+
+    return 0;
 }
