@@ -19,3 +19,6 @@ jobs:
 
       - name: Build
         run: cmake --build --preset clang-sanitizers
+        
+      - name: Run
+        run: ./build/clang-sanitizers/ci-cd-sanitizers-lab1
