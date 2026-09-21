@@ -1,0 +1,5 @@
+# ninja log v5
+593	722	1789892450363532700	ci-cd-sanitizers-lab1	f77075574ee1f5f2
+24	480	1789892450093048300	CMakeFiles/ci-cd-sanitizers-lab1.dir/main.cpp.o	f60988d0f526ab32
+71	816	1789993906902532600	CMakeFiles/ci-cd-sanitizers-lab1.dir/main.cpp.o	f60988d0f526ab32
+838	1122	1789993907264143000	ci-cd-sanitizers-lab1	f77075574ee1f5f2

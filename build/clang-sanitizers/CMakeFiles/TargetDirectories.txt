@@ -1,0 +1,3 @@
+/workspaces/ci-cd-sanitizers-lab1/build/clang-sanitizers/CMakeFiles/ci-cd-sanitizers-lab1.dir
+/workspaces/ci-cd-sanitizers-lab1/build/clang-sanitizers/CMakeFiles/edit_cache.dir
+/workspaces/ci-cd-sanitizers-lab1/build/clang-sanitizers/CMakeFiles/rebuild_cache.dir
