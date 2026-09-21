@@ -9,7 +9,7 @@ int main(int, char**){
 
     /*Address Error*/
     int values[3] = {1, 2, 3};
-    std::cout << values[3] << '\n';
+    std::cout << values[2] << '\n';
 
     
 
