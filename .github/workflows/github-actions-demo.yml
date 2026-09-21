@@ -7,13 +7,29 @@ on:
       - test-branch
 
 jobs:
-  build:
+  build-ubuntu:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
       - uses: actions/checkout@v5
         with:
           submodules: true
+      - name: Configure CMake
+        run: cmake --preset clang-sanitizers
+
+      - name: Build
+        run: cmake --build --preset clang-sanitizers
+        
+      - name: Run
+        run: ./build/clang-sanitizers/ci-cd-sanitizers-lab1
+  build-macos:
+    runs-on: macos-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          submodules: true
+          
       - name: Configure CMake
         run: cmake --preset clang-sanitizers
 
