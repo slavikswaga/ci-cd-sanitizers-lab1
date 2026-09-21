@@ -3,8 +3,8 @@
 int main(int, char**){
     std::cout << "Hello, from ci-cd-sanitizers-lab1!\n";
     /*UndefinedBehavior*/
-    int a = 2147483647; // Максимальное значение для 32-битного знакового int
-    a = a + 1; // Неопределенное поведение
+    int a = 2147483646; // Максимальное значение для 32-битного знакового int
+    a = a + 2; // Неопределенное поведение
     std::cout << a << std::endl;
 
     /*Address Error*/
