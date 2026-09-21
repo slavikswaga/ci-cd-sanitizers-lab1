@@ -22,7 +22,7 @@ jobs:
         
       - name: Run
         run: ./build/clang-sanitizers/ci-cd-sanitizers-lab1
-  build-windows:
+  build-macos:
     runs-on: macos-latest
     permissions: write-all
     steps:
